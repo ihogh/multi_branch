@@ -24,7 +24,8 @@ pipeline {
             steps {
                 sh 'echo "Building Artifact from Develop branch"'
                 sh 'echo "Deploying Code from Develop branch"'
+                sh 'echo "testing Phil Works"'
            }
         }
-    }
+        }
 }
