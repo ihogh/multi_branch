@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('git-clone'){
       steps{
-          checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/ihogh/jenkins_parallel.git']]])
+          checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/ihogh/multi_branch.git']]])
       }
     }
     stage('1-first parallel job'){
