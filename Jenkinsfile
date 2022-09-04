@@ -73,6 +73,7 @@ pipeline{
         stage('engr2-action'){
           steps{
             sh 'echo "thank you"'
+            sh 'echo "Testing muti-branching"'
           }
         }
       }
